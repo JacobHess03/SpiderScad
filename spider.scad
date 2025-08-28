@@ -1,9 +1,7 @@
 
-// --------------------------- PARAMETRES ------------------------------
-// WRITE YOUR NAME HERE
+/*[Write your name here, only UPPERCASE -> example: GWEN]*/
 word = "GWEN";
-// Scale factor for the whole word
-scale_factor = 0.8;    
+/*[Parametres to modify the text]*/    
 // Spacing between letters
 spacing = 2;
 // Thickness of the letters           
@@ -1490,7 +1488,8 @@ glyph_metadata = [
     ["U", 35.947], ["V", 35.484], ["W", 35.826], ["X", 35.805], ["Y", 35.417], ["Z", 35.326], ["'", 0], ["-", 40.972], [" ", 35.396]
 ];
 
-
+// Scale factor for the whole word
+scale_factor = 0.8;
 // Function to obtain width of glyph
 function get_glyph_width(name) =
     let(found = [for (i = [0:len(glyph_metadata)-1]) if (glyph_metadata[i][0] == name) glyph_metadata[i][1]])
